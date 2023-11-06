@@ -9,7 +9,7 @@ namespace BusinessLogic
         public ReviewValidator()
         {
             RuleFor(a => a.ReviewerEmail).NotEmpty().EmailAddress();
-            RuleFor(a => a.Rating).NotEmpty().InclusiveBetween(1,5);  
+            RuleFor(a => a.Rating).NotEmpty().InclusiveBetween(1, 5);
         }
     }
 }
